@@ -2,11 +2,7 @@ import React, {Component} from 'react';
 import Contacts from './components/contacts';
 
 class App extends Component {
-    render() {
-        return (
-            <Contacts contacts={this.state.contacts} />
-        )
-    }
+
 
     state = {
         contacts: []
@@ -20,6 +16,12 @@ class App extends Component {
             })
             .catch(console.log)
     }
+    render() {
+        return (
+            <Contacts contacts={this.state.contacts} />
+        )
+    }
+
 }
 
 export default App;
